@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:47754",
-      "sslPort": 44371
+      "applicationUrl": "http://localhost:62848",
+      "sslPort": 44394
     }
   },
   "profiles": {
@@ -17,6 +17,7 @@
     },
     "RocketElevatorsCustomerPortal": {
       "commandName": "Project",
+      "dotnetRunMessages": "true",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {

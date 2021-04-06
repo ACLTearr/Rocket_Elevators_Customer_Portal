@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketElevatorsCustomerPortal", "RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal.csproj", "{90C2FBE8-26AD-4ADB-965B-D4E0FF72D29E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketElevatorsCustomerPortal", "RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal.csproj", "{E4AD07BF-2D40-4F3A-BD3C-2A18E2D6587F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90C2FBE8-26AD-4ADB-965B-D4E0FF72D29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90C2FBE8-26AD-4ADB-965B-D4E0FF72D29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90C2FBE8-26AD-4ADB-965B-D4E0FF72D29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90C2FBE8-26AD-4ADB-965B-D4E0FF72D29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4AD07BF-2D40-4F3A-BD3C-2A18E2D6587F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4AD07BF-2D40-4F3A-BD3C-2A18E2D6587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4AD07BF-2D40-4F3A-BD3C-2A18E2D6587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4AD07BF-2D40-4F3A-BD3C-2A18E2D6587F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FFA372B2-6A26-4C2D-9DF7-463B6BC9F2C2}
+		SolutionGuid = {F991DCB8-3126-4E96-9E3D-88C586832508}
 	EndGlobalSection
 EndGlobal
