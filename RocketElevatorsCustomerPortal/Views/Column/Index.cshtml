@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Columns Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Your Columns</h1>
+</div>
+
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Building Type</th>
+            <th>Number of Floors Served</th>
+            <th>Status</th>
+            <th>Column Info</th>
+            <th>Notes</th>
+            <th>Created On</th>
+            <th>Last Updated</th>
+            <th>Battery Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+        <tr>
+            <td>@c.id</td>
+            <td>@c.building_type</td>
+            <td>@c.number_of_floors_served</td>
+            <td>@c.status</td>
+            <td>@c.information</td>
+            <td>@c.notes</td>
+            <td>@c.created_at</td>
+            <td>@c.updated_at</td>
+            <td>@c.battery_id</td>
+        </tr>
+        }
+    </tbody>
+</table>

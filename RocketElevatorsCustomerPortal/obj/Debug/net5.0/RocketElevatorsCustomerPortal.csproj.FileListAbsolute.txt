@@ -163,3 +163,17 @@ C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_AuthLayout.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Customer\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Building\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Battery\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Column\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Elevator\Index.cshtml.g.cs

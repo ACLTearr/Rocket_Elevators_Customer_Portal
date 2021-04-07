@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Building>
+@{
+    ViewData["Title"] = "Buildings";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Your Buildings</h1>
+</div>
+
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Building Administrator</th>
+            <th>Building Administrator Email</th>
+            <th>Building Administrator Phone Number</th>
+            <th>Building Technical Contact</th>
+            <th>Technical Contact Email</th>
+            <th>Technical Contact Phone Number</th>
+            <th>Created On</th>
+            <th>Last Updated</th>
+            <th>Customer Id</th>
+            <th>Address Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model)
+        {
+        <tr>
+            <td>@b.id</td>
+            <td>@b.full_name_of_the_building_administrator</td>
+            <td>@b.email_of_the_administrator_of_the_building</td>
+            <td>@b.phone_number_of_the_building_administrator</td>
+            <td>@b.full_name_of_the_technical_contact_for_the_building</td>
+            <td>@b.technical_contact_email_for_the_building</td>
+            <td>@b.technical_contact_phone_for_the_building</td>
+            <td>@b.created_at</td>
+            <td>@b.updated_at</td>
+            <td>@b.customer_id</td>
+            <td>@b.address_id</td>
+        </tr>
+        }
+    </tbody>
+</table>
