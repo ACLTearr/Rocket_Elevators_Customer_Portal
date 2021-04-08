@@ -1,0 +1,189 @@
+﻿@{
+    ViewData["Title"] = "Products";
+    var building = ViewBag.building;
+    var battery = ViewBag.battery;
+    var column = ViewBag.column;
+    var elevator = ViewBag.elevator;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to your Products</h1>
+</div>
+
+@*Buildings Table*@
+
+<h4 class="display-4 text-center">Your Buildings</h4>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered col-md-3">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Building Administrator</th>
+                <th>Building Administrator Email</th>
+                <th>Building Administrator Phone Number</th>
+                <th>Building Technical Contact</th>
+                <th>Technical Contact Email</th>
+                <th>Technical Contact Phone Number</th>
+                <th>Created On</th>
+                <th>Last Updated</th>
+                <th>Customer Id</th>
+                <th>Address Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in building)
+            {
+                <tr>
+                    <td>@b.id</td>
+                    <td>@b.full_name_of_the_building_administrator</td>
+                    <td>@b.email_of_the_administrator_of_the_building</td>
+                    <td>@b.phone_number_of_the_building_administrator</td>
+                    <td>@b.full_name_of_the_technical_contact_for_the_building</td>
+                    <td>@b.technical_contact_email_for_the_building</td>
+                    <td>@b.technical_contact_phone_for_the_building</td>
+                    <td>@b.created_at</td>
+                    <td>@b.updated_at</td>
+                    <td>@b.customer_id</td>
+                    <td>@b.address_id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@*Batteries Table*@
+
+<div class="text-center">
+    <h4 class="display-4">Your Batteries</h4>
+</div>
+
+
+<div class="table-responsive">
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Building Type</th>
+                <th>Status</th>
+                <th>Commission Date</th>
+                <th>Last Inspection</th>
+                <th>Operation Certificate</th>
+                <th>Battery Info</th>
+                <th>Notes</th>
+                <th>Created On</th>
+                <th>Last Updated</th>
+                <th>Employee Id</th>
+                <th>Building Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in battery)
+            {
+                <tr>
+                    <td>@b.id</td>
+                    <td>@b.building_type</td>
+                    <td>@b.status</td>
+                    <td>@b.date_of_commissioning</td>
+                    <td>@b.date_of_last_inspection</td>
+                    <td>@b.certificate_of_operations</td>
+                    <td>@b.information</td>
+                    <td>@b.notes</td>
+                    <td>@b.created_at</td>
+                    <td>@b.updated_at</td>
+                    <td>@b.employee_id</td>
+                    <td>@b.building_id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@*Columns Table*@
+
+<div class="text-center">
+    <h4 class="display-4">Your Columns</h4>
+</div>
+
+
+<div class="table-responsive">
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Building Type</th>
+                <th>Number of Floors Served</th>
+                <th>Status</th>
+                <th>Column Info</th>
+                <th>Notes</th>
+                <th>Created On</th>
+                <th>Last Updated</th>
+                <th>Battery Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in column)
+            {
+                <tr>
+                    <td>@c.id</td>
+                    <td>@c.building_type</td>
+                    <td>@c.number_of_floors_served</td>
+                    <td>@c.status</td>
+                    <td>@c.information</td>
+                    <td>@c.notes</td>
+                    <td>@c.created_at</td>
+                    <td>@c.updated_at</td>
+                    <td>@c.battery_id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@*Elevators Table*@
+
+<div class="text-center">
+    <h4 class="display-4">Your Elevators</h4>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Serial Number</th>
+                <th>Model</th>
+                <th>Building Type</th>
+                <th>Status</th>
+                <th>Commission Date</th>
+                <th>Last Inspection</th>
+                <th>Inspection Certificate</th>
+                <th>Elevator Info</th>
+                <th>Notes</th>
+                <th>Created On</th>
+                <th>Last Updated</th>
+                <th>Column Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var e in elevator)
+            {
+                <tr>
+                    <td>@e.id</td>
+                    <td>@e.serial_number</td>
+                    <td>@e.model</td>
+                    <td>@e.building_type</td>
+                    <td>@e.status</td>
+                    <td>@e.date_of_commissioning</td>
+                    <td>@e.date_of_last_inspection</td>
+                    <td>@e.certificate_of_inspection</td>
+                    <td>@e.information</td>
+                    <td>@e.notes</td>
+                    <td>@e.created_at</td>
+                    <td>@e.updated_at</td>
+                    <td>@e.column_id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

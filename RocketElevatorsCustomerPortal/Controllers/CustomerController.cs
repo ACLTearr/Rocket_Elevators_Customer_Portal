@@ -19,7 +19,7 @@ namespace RocketElevatorsCustomerPortal.Controllers
             List<Customer> customerList = new List<Customer>();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://radiant-ridge-19107.herokuapp.com/api/customers/" + userName + "/customer"))
+                using (var response = await httpClient.GetAsync("https://rest-api-burroughs.herokuapp.com/api/customers/" + userName + "/customer"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     customerList = JsonConvert.DeserializeObject<List<Customer>>(apiResponse);

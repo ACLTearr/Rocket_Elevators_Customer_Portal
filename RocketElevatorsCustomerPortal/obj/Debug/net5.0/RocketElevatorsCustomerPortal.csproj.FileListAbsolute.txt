@@ -116,7 +116,6 @@ C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\RocketElevatorsCustomerPortal.TagHelpers.output.cache
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\RocketElevatorsCustomerPortal.RazorCoreGenerate.cache
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -173,7 +172,5 @@ C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Customer\Index.cshtml.g.cs
-C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Building\Index.cshtml.g.cs
-C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Battery\Index.cshtml.g.cs
-C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Column\Index.cshtml.g.cs
-C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Elevator\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+C:\codeboxx\week-11\RocketElevatorsCustomerPortal\RocketElevatorsCustomerPortal\obj\Debug\net5.0\Razor\Views\Intervention\Index.cshtml.g.cs

@@ -3,17 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - RocketElevatorsCustomerPortal</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto$display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RocketElevatorsCustomerPortal</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Customer Portal</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,16 +27,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Customer" asp-action="Index">Profile</a>
                         </li>
-                        <li class="dropdown">
-                            <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                Products
-                            </button>
-                            <div class="dropdown-menu">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Building" asp-action="Index">Buildings</a>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Battery" asp-action="Index">Batteries</a>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Column" asp-action="Index">Columns</a>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Elevator" asp-action="Index">Elevators</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Intervention" asp-action="Index">Intervention</a>
                         </li>
                     </ul>
                     }
