@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Customer Profile";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Creation Date</th>
+            <th>Company Name</th>
+            <th>Company Contact</th>
+            <th>Company Contact Phone Number</th>
+            <th>Company Contact Email</th>
+            <th>Company Description</th>
+            <th>Technical Service Authority</th>
+            <th>Technical Service Authority Phone Number</th>
+            <th>Technical Service Authority Email</th>
+            <th>Created On</th>
+            <th>Last Updated</th>
+            <th>User Id</th>
+            <th>Address Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+        <tr>
+            <td>@c.id</td>
+            <td>@c.customers_creation_date</td>
+            <td>@c.company_name</td>
+            <td>@c.full_name_of_company_contact</td>
+            <td>@c.company_contact_phone</td>
+            <td>@c.email_of_company_contact</td>
+            <td>@c.company_description</td>
+            <td>@c.full_name_of_service_technical_authority</td>
+            <td>@c.technical_authority_phone_for_service_</td>
+            <td>@c.technical_manager_email_for_service</td>
+            <td>@c.created_at</td>
+            <td>@c.updated_at</td>
+            <td>@c.user_id</td>
+            <td>@c.address_id</td>
+        </tr>
+        }
+    </tbody>
+</table>

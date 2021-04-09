@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Interventions";
+    var customer = ViewBag.customer;
+    var building = ViewBag.building;
+    var battery = ViewBag.battery;
+    var column = ViewBag.column;
+    var elevator = ViewBag.elevator;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Submit an Intervention</h1>
+</div>
+
+<div class="card card-default" style="border: none">
+    <div class="card-block">
+        <form onsubmit="return submitIntervention()" method="post" id="interventions-form">
+            <div class="container text-center" id="building">
+                <select class="form-control" name="building_id" id="building_id" required>
+                    <option disabled selected hidden>Please select a Building</option>
+                    @foreach (var b in building)
+                    {
+                        <option>@b.id</option>
+                    }
+                </select>
+            </div>
+
+            <br>
+
+            <div class="container text-center" id="battery">
+                <select class="form-control" name="battery_id" id="battery_id" required>
+                    <option disabled selected hidden>Please select a Battery</option>
+                    @foreach (var b in battery)
+                    {
+                        <option>@b.id</option>
+                    }
+                </select>
+            </div>
+
+            <br>
+
+            <div class="container text-center" id="column">
+                <select class="form-control" name="column_id" id="column_id">
+                    <option disabled selected hidden>Please select a Column</option>
+                    @foreach (var c in column)
+                    {
+                        <option>@c.id</option>
+                    }
+                </select>
+            </div>
+
+            <br>
+
+            <div class="container text-center" id="elevator">
+                <select class="form-control" name="elevator_id" id="elevator_id">
+                    <option disabled selected hidden>Please select an Elevator</option>
+                    @foreach (var e in elevator)
+                    {
+                        <option>@e.id</option>
+                    }
+                </select>
+            </div>
+
+            <br>
+
+            <div class="container text-center" id="description">
+                <p>Please enter a description of the intervention here:</p>
+                <textarea maxlength="5000" rows="8" class="form-control" id="report"></textarea>
+            </div>
+
+            <br>
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
