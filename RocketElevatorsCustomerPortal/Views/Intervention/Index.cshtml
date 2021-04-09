@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Interventions";
+    var customer = ViewBag.customer;
     var building = ViewBag.building;
     var battery = ViewBag.battery;
     var column = ViewBag.column;
@@ -10,12 +11,12 @@
     <h1 class="display-4">Submit an Intervention</h1>
 </div>
 
-<div class="card card-default">
+<div class="card card-default" style="border: none">
     <div class="card-block">
-        <form method="post" id="interventions-form">
+        <form onsubmit="return submitIntervention()" method="post" id="interventions-form">
             <div class="container text-center" id="building">
                 <select class="form-control" name="building_id" id="building_id" required>
-                    <option disabled selected>Please select a Building</option>
+                    <option disabled selected hidden>Please select a Building</option>
                     @foreach (var b in building)
                     {
                         <option>@b.id</option>
@@ -27,7 +28,7 @@
 
             <div class="container text-center" id="battery">
                 <select class="form-control" name="battery_id" id="battery_id" required>
-                    <option disabled selected>Please select a Battery</option>
+                    <option disabled selected hidden>Please select a Battery</option>
                     @foreach (var b in battery)
                     {
                         <option>@b.id</option>
@@ -39,7 +40,7 @@
 
             <div class="container text-center" id="column">
                 <select class="form-control" name="column_id" id="column_id">
-                    <option disabled selected>Please select a Column</option>
+                    <option disabled selected hidden>Please select a Column</option>
                     @foreach (var c in column)
                     {
                         <option>@c.id</option>
@@ -51,7 +52,7 @@
 
             <div class="container text-center" id="elevator">
                 <select class="form-control" name="elevator_id" id="elevator_id">
-                    <option disabled selected>Please select an Elevator</option>
+                    <option disabled selected hidden>Please select an Elevator</option>
                     @foreach (var e in elevator)
                     {
                         <option>@e.id</option>
@@ -67,9 +68,9 @@
             </div>
 
             <br>
-
-            <input class="btn btn-primary text-center" type="submit" value="Submit">
-
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
         </form>
     </div>
 </div>

@@ -17,6 +17,14 @@ namespace RocketElevatorsCustomerPortal.Controllers
 
             var userName = User.FindFirstValue(ClaimTypes.Name);
 
+            //Returning logged in Customer
+            HttpClient customerClient = new HttpClient();
+            var responseCustomer = customerClient.GetStringAsync("https://rest-api-burroughs.herokuapp.com/api/customers/" + userName + "/customer").GetAwaiter().GetResult();
+            
+            List<Customer> customerList = JsonConvert.DeserializeObject<List<Customer>>(responseCustomer);
+
+            ViewBag.customer = customerList;
+
             //Returning Buildings
             HttpClient buildingClient = new HttpClient();
             var responseBuilding = buildingClient.GetStringAsync("https://rest-api-burroughs.herokuapp.com/api/buildings/" + userName + "/customer").GetAwaiter().GetResult();
