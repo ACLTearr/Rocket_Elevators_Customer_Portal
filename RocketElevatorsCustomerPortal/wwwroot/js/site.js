@@ -33,6 +33,7 @@ $(document).ready(function () {
         $('#elevator').hide()
     }
 
-    let customer = JSON.parse('@HTML.Raw(Json.Serialize(ViewBag.customer))')
+
+    
 
 })
