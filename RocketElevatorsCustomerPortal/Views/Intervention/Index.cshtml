@@ -13,7 +13,16 @@
 
 <div class="card card-default" style="border: none">
     <div class="card-block">
-        <form onsubmit="return submitIntervention()" method="post" id="interventions-form">
+        <form method="post" id="interventions-form">
+            <div id="customer">
+                <select id="customer_id" hidden>
+                    @foreach (var c in customer)
+                    {
+                        <option selected>@c.id</option>
+                    }
+                </select>
+            </div>
+
             <div class="container text-center" id="building">
                 <select class="form-control" name="building_id" id="building_id" required>
                     <option disabled selected hidden>Please select a Building</option>
@@ -69,8 +78,40 @@
 
             <br>
             <div class="text-center">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button onclick="submitIntervention()" class="btn btn-primary" type="submit">Submit</button>
             </div>
         </form>
     </div>
 </div>
+
+<script>
+    function submitIntervention() {
+        var interventionData = {
+            customer_id: $('#customer_id').val(),
+            building_id: $("#building_id").val(),
+            battery_id: $("#battery_id").val(),
+            column_id: $("#column_id").val(),
+            elevator_id: $("#elevator_id").val(),
+            report: $("#report").val(),
+            status: "Pending"
+        }
+
+        $.ajax({
+            url: 'https://rest-api-burroughs.herokuapp.com/api/interventions',
+            type: 'POST',
+            data: JSON.stringify(interventionData),
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "HEAD, GET, POST, PUT, PATCH, DELETE",
+                "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            success: function (result) {
+                alert('Your intervention has been submitted.')
+                return false
+            }
+        })
+        return false
+    }
+</script>
